@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "author": "Smart Irrigation",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot", "top": 120, "left": -120, "attrs": {} },
+    { "type": "wokwi-lcd2004", "id": "lcd", "top": -180, "left": 180, "attrs": { "pins": "i2c" } },
+    { "type": "wokwi-relay-module", "id": "relay", "top": 120, "left": 180, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:GND.1", "pot:GND", "black", [ "v0" ] ],
+    [ "esp:3V3", "pot:VCC", "red", [ "v0" ] ],
+    [ "esp:34", "pot:SIG", "green", [ "v0" ] ],
+
+    [ "esp:GND.2", "lcd:GND", "black", [ "v0" ] ],
+    [ "esp:5V", "lcd:VCC", "red", [ "v0" ] ],
+    [ "esp:21", "lcd:SDA", "blue", [ "v0" ] ],
+    [ "esp:22", "lcd:SCL", "yellow", [ "v0" ] ],
+
+    [ "esp:GND.3", "relay:GND", "black", [ "v0" ] ],
+    [ "esp:5V", "relay:VCC", "red", [ "v0" ] ],
+    [ "esp:25", "relay:IN", "orange", [ "v0" ] ]
+  ]
+}
