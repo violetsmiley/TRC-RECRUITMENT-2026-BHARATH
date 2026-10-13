@@ -1,0 +1,16 @@
+Task - 0: Theory
+
+
+Libraries Used
+
+• No external libraries are required for these tasks. All functionality uses the built-in Arduino core framework.
+
+Commands Used in Arduino IDE
+
+• Serial.begin(speed): Initializes serial communication at a specified baud rate.
+• Serial.println(text): Prints text data to the Serial Monitor followed by a new line.
+• delay(ms): Pauses program execution for a specified duration in milliseconds.
+• pinMode(pin, mode): Configures a specific digital pin as an INPUT or OUTPUT.
+• digitalWrite(pin, value): Sets a digital pin to HIGH (on) or LOW (off).
+• analogRead(pin): Reads the voltage level from a specified analog input pin.
+• random(min, max): Generates a pseudo-random number within a specified
